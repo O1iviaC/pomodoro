@@ -9,16 +9,21 @@
 </head>
 <body>
     <div id="modes">
-        <button data-mode-id="pomodoro">Pomodoro</button>
-        <button data-mode-id="short">Short Break</button>
-        <button data-mode-id="long">Long Break</button>
+        <button data-mode-id="pomodoro" class = "mode active">Pomodoro</button>
+        <button data-mode-id="short" class = "mode">Short Break</button>
+        <button data-mode-id="long" class = "mode">Long Break</button>
     </div>
     <div id="timer">25:00</div>
     <div id="controls">
-        <button onclick="startTimer()">Start</button>
-        <button onclick="pauseTimer()">Pause</button>
-        <button onclick="skipTimer()">Skip</button>
+        <button onclick="startTimer()" class="timer-control start">Start</button>
+        <button onclick="pauseTimer()" class="timer-control pause">Pause</button>
+        <button onclick="nextMode()" class="timer-control skip">Skip</button>
 
+    </div>
+    <div id="duration-control">
+        Work Time: <input type="number" placeholder="Work Duration" class="duration" data-duration-id="pomodoro"> <br>
+        Short Break: <input type="number" placeholder="Short Break" class="duration" data-duration-id="short"> <br>
+        Long Break: <input type="number" placeholder="Long Break" class="duration" data-duration-id="long"> <br>
     </div>
 </body>
 
