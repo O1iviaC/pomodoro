@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
 :root{
     --pomodoro: #af3f3f;
-    --short: #3fa4af;
-    --long: #73af3f;
+    --short: #294d8f;
+    --long: #0b6308;
 }
+
 
 html {
     text-align: center;
@@ -16,6 +19,7 @@ html {
     align-items: center;
     flex-direction: column;
     transition: background-colour 0.5s ease;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 
@@ -34,6 +38,7 @@ html {
     padding: 15px;
     font-size: 17px;
     transition-duration: 0.2s;
+    font-family: 'Lexend Deca', sans-serif;
 
 }
 
@@ -62,7 +67,8 @@ html {
     mix-blend-mode: lighten;
     padding: 10px 20px;
     font-size: 20px;
-    transition-duration: 0.2s
+    font-family: 'Lexend Deca', sans-serif;
+    transition-duration: 0.2s;
 }
 
 .timer-control:disabled {
@@ -78,6 +84,7 @@ html {
 #duration-control {
     margin-top: 20px;
     user-select: none;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 #duration-control .duration {
